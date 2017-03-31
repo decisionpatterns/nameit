@@ -21,10 +21,10 @@ get_namer(fun)
 \item{namer}{function or string; See Details.}
 }
 \value{
-A function with an appended class.
+`fun` with appended class 'with_namer' and the `namer` attribute set.
 }
 \description{
-sets or gets the `namer` attribute that
+sets or gets the `namer` attribute of a function
 }
 \details{
 `set_namer` is a function decorator that adds/updates a `namer`` attribute of

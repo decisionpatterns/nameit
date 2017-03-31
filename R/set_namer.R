@@ -1,6 +1,6 @@
 #' set_namer / get_namer
 #'
-#' sets or gets the `namer` attribute that
+#' sets or gets the `namer` attribute of a function
 #'
 #' @param fun function or fseq to convert to a naming function
 #' @param namer function or string; See Details.
@@ -19,7 +19,7 @@
 #'
 #' @return
 #'
-#' A function with an appended class.
+#' `fun` with appended class 'with_namer' and the `namer` attribute set.
 #'
 #' @examples
 #'
@@ -47,6 +47,7 @@
 #'
 #'
 #' @importFrom base.tools is.string
+#' @importFrom stringr.tools str_suffix
 #' @export
 
 set_namer <- function(fun, namer, ... ) UseMethod('set_namer')

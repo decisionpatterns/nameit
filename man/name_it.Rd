@@ -2,9 +2,15 @@
 % Please edit documentation in R/name_it.R
 \name{name_it}
 \alias{name_it}
+\alias{name_it.character}
+\alias{name_it.default}
 \title{Automatically name metrics}
 \usage{
 name_it(x, fun)
+
+\method{name_it}{character}(x, fun)
+
+\method{name_it}{default}(x, fun)
 }
 \arguments{
 \item{fun}{`with_naming` function}
@@ -23,6 +29,10 @@ A name is comprised of a prefix, base and suffix
 nm_mean <- mean \%>\% set_namer
 
 "price" \%>\% name_it( nm_mean )
+
+ retail <- rnorm(50)
+
+ retail \%>\% name_it(nm_mean)
 
 }
 \references{

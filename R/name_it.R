@@ -18,21 +18,40 @@
 #'
 #' "price" %>% name_it( nm_mean )
 #'
+#'  retail <- rnorm(50)
+#'
+#'  retail %>% name_it(nm_mean)
+#'
 #' @references
 #'  - Cf. Kurremkarmerruk (the master namer)
 #'
 #' @importFrom stringr.tools str_prefix str_suffix
 #' @export
 
-name_it <- function(x, fun) {
 
+name_it <- function(x, fun ) {
   stopifnot( is( fun, "with_naming" ) )
+  UseMethod('name_it')
+}
+
+#' @rdname name_it
+#' @export
+
+name_it.character <- function(x, fun) {
 
   namer <- get_namer(fun)
   namer(x)
 
 }
 
+#' @rdname name_it
+#' @export
+
+name_it.default <- function(x, fun) {
+  x <- get_pipe_source(x)
+  namer <- get_namer(fun)
+  namer(x)
+}
 
 # name_it( "arr_delay" )
 # name_it( "arr_delay", prefix="flights" )
