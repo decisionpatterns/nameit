@@ -8,7 +8,8 @@
 #' @details
 #'
 #' `set_namer` is a function decorator that adds/updates a `namer`` attribute of
-#' `fun`.
+#' `fun`. It is also a mixin/role for adding additional capabilities to a
+#' function.
 #'
 #' The `namer` argument can either be a string or function. If a function, this
 #' is used as the naming function.  string, the
@@ -51,6 +52,13 @@
 #' @export
 
 set_namer <- function(fun, namer, ... ) UseMethod('set_namer')
+
+
+#' @rdname set_namer
+#' @export
+
+set_namer.default <- function(fun, namer, ... )
+  stop( "'set_namer' only works for functions or function sequences.")
 
 
 #' @rdname set_namer
