@@ -19,9 +19,11 @@ find_chain_parts <- function() {
 
 
 # mean %>% identity %>% head %>% printfirstname
-#' nm_mean <- mean %>% set_namer
-#'
-#' "price" %>% name_it( nm_mean )
+# nm_mean <- mean %>% set_namer
+#
+# "price" %>% name_it( nm_mean )
+#
+
 #' Get source argument from a chain
 #'
 #' Magrittr pipe function

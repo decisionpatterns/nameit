@@ -2,12 +2,15 @@
 % Please edit documentation in R/set_namer.R
 \name{set_namer}
 \alias{set_namer}
+\alias{set_namer.default}
 \alias{set_namer.function}
 \alias{set_namer.fseq}
 \alias{get_namer}
 \title{set_namer / get_namer}
 \usage{
 set_namer(fun, namer, ...)
+
+\method{set_namer}{default}(fun, namer, ...)
 
 \method{set_namer}{function}(fun, namer = NULL, ...)
 
@@ -28,7 +31,8 @@ sets or gets the `namer` attribute of a function
 }
 \details{
 `set_namer` is a function decorator that adds/updates a `namer`` attribute of
-`fun`.
+`fun`. It is also a mixin/role for adding additional capabilities to a
+function.
 
 The `namer` argument can either be a string or function. If a function, this
 is used as the naming function.  string, the

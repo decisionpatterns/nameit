@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{get_pipe_source}
 \alias{get_pipe_source}
-\title{nm_mean <- mean %>% set_namer}
+\title{Get source argument from a chain}
 \usage{
 get_pipe_source(x)
 }
@@ -10,15 +10,10 @@ get_pipe_source(x)
 \item{x}{magrittr}
 }
 \description{
-"price" %>% name_it( nm_mean )
-Get source argument from a chain
+Magrittr pipe function
 }
 \details{
-Magrittr pipe function
-
-
-
- `lazyeval::expr_text` does not work for pipes ...
+`lazyeval::expr_text` does not work for pipes ...
 }
 \examples{
 
