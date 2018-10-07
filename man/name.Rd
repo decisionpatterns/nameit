@@ -25,6 +25,8 @@ attributes
 
   name(1:10)
   name(letters)
+
+  name(iris$Species)
   name(iris)
-  
+
 }

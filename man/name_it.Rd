@@ -31,8 +31,9 @@ nm_mean <- mean \%>\% set_namer
 "price" \%>\% name_it( nm_mean )
 
  retail <- rnorm(50)
-
+ 
  retail \%>\% name_it(nm_mean)
+
 
 }
 \references{
