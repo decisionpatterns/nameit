@@ -12,9 +12,14 @@
 #'
 #' @examples
 #'
-#' name(1:10)
+#'   name(1:10)
+#'   name(letters)
+#'
+#'   name(iris$Species)
+#'   name(iris)
 #'
 #' @md
+#'
 #' @export
 
 name <- function(x, ...) UseMethod('name')
@@ -22,7 +27,7 @@ name <- function(x, ...) UseMethod('name')
 name.default <- function(x, ... ) {
 
   if( ! is.null( attr(x, "name") ) ) {
-    warn("name attribute already exists will not rename.")
+    warning("name attribute already exists will not rename.")
     return(x)
   }
 

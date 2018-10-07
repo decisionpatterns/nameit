@@ -23,6 +23,8 @@ attributes
 }
 \examples{
 
-name(1:10)
-
+  name(1:10)
+  name(letters)
+  name(iris)
+  
 }

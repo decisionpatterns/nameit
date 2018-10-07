@@ -1,7 +1,8 @@
 Package: nameit
 Type: Package
 Title: Functions and Result Names   
-Version: 0.1.1
+Version: 0.2.0
+Date: 2018-03-29
 Author: Christopher Brown
 Maintainer: Christopher Brown <chris.brown@decisionpatterns.com>
 Description: This package facilitates creating functions that not only calculate
@@ -16,4 +17,3 @@ LazyData: true
 RoxygenNote: 6.0.1.9000
 Suggests: testthat
 Repository: CRAN
-
