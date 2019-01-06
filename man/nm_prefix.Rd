@@ -27,30 +27,30 @@ nm_prefix(x, prefix, sep = "", ...)
 \arguments{
 \item{x}{object with a names attribute}
 
-\item{prefix}{character; prefix collapsed to string by \code{sep} and 
+\item{prefix}{character; prefix collapsed to string by \code{sep} and
 added to the front of each name}
 
-\item{sep}{string used to collapse and seperate \code{prefix} or 
+\item{sep}{string used to collapse and seperate \code{prefix} or
 \code{suffix} from names. The default is not to use a separator.}
 
 \item{...}{additional arguments}
 
-\item{exclude_key}{logical; if \code{TRUE} do not mangle the object's keys. 
+\item{exclude_key}{logical; if \code{TRUE} do not mangle the object's keys.
 (DEFAULT: \code{TRUE})}
 
-\item{suffix}{character; collapsed to string by \code{sep} and 
+\item{suffix}{character; collapsed to string by \code{sep} and
 added to the back of each name.}
 }
 \value{
-An object with the names altered by a prefix or suffix. For data.tables, 
-  these are returned invisibly.
+An object with the names altered by a prefix or suffix. For data.tables,
+these are returned invisibly.
 }
 \description{
 Adds a prefix or suffix to the names attributes.
 }
 \details{
 \code{nm_prefix} and \code{nm_suffix} add a prefix or suffix to the names of
-an object. 
+an object.
 
 The method for data.table objects are modified by reference.
 }

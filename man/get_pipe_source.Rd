@@ -13,7 +13,7 @@ get_pipe_source(x)
 Magrittr pipe function
 }
 \details{
-`lazyeval::expr_text` does not work for pipes ...
+\code{lazyeval::expr_text} does not work for pipes ...
 }
 \examples{
 
@@ -23,5 +23,7 @@ Magrittr pipe function
  get_pipe_source(f)
 }
 \seealso{
-- `lazyeval::expr_text`
+\itemize{
+\item \code{lazyeval::expr_text}
+}
 }

@@ -19,7 +19,7 @@ nm_setdiff(x, y, ...)
 
 \item{...}{additional objects, currently unused
 
-This is like \code{intersect} but works on names instead of values. It 
+This is like \code{intersect} but works on names instead of values. It
 returns tje}
 }
 \value{

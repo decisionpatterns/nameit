@@ -24,21 +24,20 @@ get_namer(fun)
 \item{namer}{function or string; See Details.}
 }
 \value{
-`fun` with appended class 'with_namer' and the `namer` attribute set.
+\code{fun} with appended class 'with_namer' and the \code{namer} attribute set.
 }
 \description{
-sets or gets the `namer` attribute of a function
+sets or gets the \code{namer} attribute of a function
 }
 \details{
-`set_namer` is a function decorator that adds/updates a `namer`` attribute of
-`fun`. It is also a mixin/role for adding additional capabilities to a
+\code{set_namer} is a function decorator that adds/updates a \code{namer`` attribute of }fun`. It is also a mixin/role for adding additional capabilities to a
 function.
 
-The `namer` argument can either be a string or function. If a function, this
+The \code{namer} argument can either be a string or function. If a function, this
 is used as the naming function.  string, the
 naming function is to use this function as a suffix    `
 
-`get_namer` retrieves the naming function.
+\code{get_namer} retrieves the naming function.
 }
 \examples{
 
@@ -67,5 +66,7 @@ naming function is to use this function as a suffix    `
 
 }
 \seealso{
-- `name_it``
+\itemize{
+\item `name_it``
+}
 }

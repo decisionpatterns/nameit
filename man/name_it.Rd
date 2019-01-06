@@ -13,7 +13,7 @@ name_it(x, fun)
 \method{name_it}{default}(x, fun)
 }
 \arguments{
-\item{fun}{`with_naming` function}
+\item{fun}{\code{with_naming} function}
 
 \item{base}{string that serves a the root to the name and passed as the first
 argument to the namer function}
@@ -37,5 +37,7 @@ nm_mean <- mean \%>\% set_namer
 
 }
 \references{
-- Cf. Kurremkarmerruk (the master namer)
+\itemize{
+\item Cf. Kurremkarmerruk (the master namer)
+}
 }

@@ -18,5 +18,5 @@ string; the name
 Get the name following the name provided
 }
 \details{
-`the_name_after` returnes
+\code{the_name_after} returnes
 }
