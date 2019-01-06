@@ -43,13 +43,13 @@ naming function is to use this function as a suffix    `
 
 # With functions:
 
- f1 <- mean \%>\% set_namer( function(x) str_suffix(x,'mean') )
+ f1 <- mean \%>\% set_namer( function(x) str_suffix(x,'.mean') )
  "price" \%>\% name_it(f1)       # "price.mean"
 
- f2 <- mean \%>\% set_namer( . \%>\% str_suffix('mean') )
+ f2 <- mean \%>\% set_namer( . \%>\% str_suffix('.mean') )
  "price" \%>\% name_it(f2)       # "price.mean"
 
- f3 <- mean \%>\% set_namer('mean')
+ f3 <- mean \%>\% set_namer('.mean')
  "price" \%>\% name_it(f3)       # "price.mean"
 
  f4 <- mean \%>\% set_namer()

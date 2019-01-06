@@ -14,8 +14,8 @@ attribute. We could probably abstract this to a `mixin` package. A mixin:
 
 This does not work:
 
- ```
-  library(na.actions)
+ ```R
+  library(na.tools)
   f <- . %>% na_omit %>% median 
   f2 <- set_namer(f)
   "foo" %>% name_it(f2)  # "foo.na_omit" 
