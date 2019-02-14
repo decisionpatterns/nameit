@@ -1,5 +1,8 @@
 # TODO.md
 
+ - [ ] `nm_diff()` like `set_diff( names(x), names(y) )` 
+
+
  - Change pkgname to `namethat` or split into `name.tools` and `namethat`
  - Add `name` method to provide a canonical name 
  - Add `named` class; to provide for a `name` attributed; `as.named`
