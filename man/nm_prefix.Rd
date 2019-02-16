@@ -57,31 +57,31 @@ The method for data.table objects are modified by reference.
 \examples{
 
 # nm_prefix
-  
+
   data(iris)
-  iris <- nm_prefix( iris, "var_" ) 
-  names(iris)
-  
-  data(iris)
-  setDT(iris)
-  nm_prefix( iris, "var_" ) 
+  iris <- nm_prefix( iris, "var_" )
   names(iris)
 
-# nm_suffix      
-  data(iris)
-  iris <- nm_suffix( iris, "_var" ) 
-  names(iris)
-  
   data(iris)
   setDT(iris)
-  nm_suffix( iris, "_var" ) 
+  nm_prefix( iris, "var_" )
   names(iris)
-  
+
+# nm_suffix
+  data(iris)
+  iris <- nm_suffix( iris, "_var" )
+  names(iris)
+
+  data(iris)
+  setDT(iris)
+  nm_suffix( iris, "_var" )
+  names(iris)
+
 }
 \seealso{
-\code{\link[stringr.tools]{str_prefix}} which is used by these functions
+\code{\link[stringr.tools:str_prefix]{stringr.tools::str_prefix()}} which is used by these functions
 
-\code{\link[data.table]{setnames}}
+(setnames)\code{\link[data.table:setattr]{data.table::setattr()}}
 
-\code{\link[data.table]{setnames}}
+(data.table::setnames)\code{\link[data.table:setattr]{data.table::setattr()}}
 }
