@@ -1,8 +1,8 @@
 Package: nameit
 Type: Package
 Title: Functions for Working with Names
-Version: 0.3.1
-Date: 2019-02-14
+Version: 0.4.0
+Date: 2019-02-15
 Authors@R: c(
     person("Christopher", "Brown", , "chris.brown@decisionpatterns.com", c("aut", "cre") ),
     person("Decision Patterns", role = "cph")
@@ -12,7 +12,6 @@ Description: This package facilitates creating functions that not only calculate
     function. 
 License: GPL-3 | File LICENSE
 Import:
-    base.tools (>= 0.26.0),
     stringr.tools (>= 0.1.5)
 Encoding: UTF-8
 LazyData: true

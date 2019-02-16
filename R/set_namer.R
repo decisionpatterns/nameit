@@ -47,7 +47,7 @@
 #'  "price" %>% name_it(f)        # "price.mean"
 #'
 #'
-#' @importFrom base.tools is.string
+# @importFrom base.tools is.string
 #' @importFrom stringr.tools str_suffix
 #' @export
 
@@ -71,7 +71,7 @@ set_namer.function <- function( fun, namer=NULL, ... ) {
     namer <- lazyeval::expr_text(fun)
 
   # fun was a pipe
-  if( base.tools::is.string(namer) && namer == ".")
+  if( is.string(namer) && namer == ".")
     namer <- get_pipe_source(fun)
 
   # namer is function
