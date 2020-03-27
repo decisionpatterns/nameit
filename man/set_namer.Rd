@@ -12,7 +12,7 @@ set_namer(fun, namer, ...)
 
 \method{set_namer}{default}(fun, namer, ...)
 
-\method{set_namer}{function}(fun, namer = NULL, ...)
+\method{set_namer}{`function`}(fun, namer = NULL, ...)
 
 \method{set_namer}{fseq}(fun, namer = NULL, ...)
 
@@ -30,7 +30,7 @@ get_namer(fun)
 sets or gets the \code{namer} attribute of a function
 }
 \details{
-\code{set_namer} is a function decorator that adds/updates a \code{namer`` attribute of }fun`. It is also a mixin/role for adding additional capabilities to a
+\code{set_namer} is a function decorator that adds/updates a \verb{namer`` attribute of }fun`. It is also a mixin/role for adding additional capabilities to a
 function.
 
 The \code{namer} argument can either be a string or function. If a function, this
