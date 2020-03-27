@@ -2,7 +2,7 @@
 # nameit - Automagical Naming of Variables
 
 Naming variables is hard. The nameit package attempts to alleviate the hardship
-by providing a coherent, descriptive and standards0based naming scheme that 
+by providing a coherent, descriptive and standards-based naming scheme that 
 automagically names variables as they they are transformed.
 
 The names are created by function and function
