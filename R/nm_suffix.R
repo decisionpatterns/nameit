@@ -38,7 +38,7 @@ nm_suffix.data.frame <- function(x, suffix, sep="", ...) {
 #' @rdname nm_prefix
 #' @export
 
-nm_suffix.data.table <- function(x, suffix, sep="", ..., exclude_key ) {
+nm_suffix.data.table <- function(x, suffix, sep="", ..., exclude_key=TRUE ) {
 
   nms <- names(x)
   if( exclude_key && ! is.null(key(x)) ) {

@@ -25,7 +25,7 @@ nm_suffix(x, suffix, sep = "", ...)
 
 \method{nm_suffix}{data.frame}(x, suffix, sep = "", ...)
 
-\method{nm_suffix}{data.table}(x, suffix, sep = "", ..., exclude_key)
+\method{nm_suffix}{data.table}(x, suffix, sep = "", ..., exclude_key = TRUE)
 }
 \arguments{
 \item{x}{object with a names attribute}
