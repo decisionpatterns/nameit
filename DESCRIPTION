@@ -1,8 +1,8 @@
 Package: nameit
 Type: Package
 Title: Functions for Working with Names
-Version: 0.4.1
-Date: 2019-02-15
+Version: 0.4.2
+Date: 2020-08-17
 Authors@R: c(
     person("Christopher", "Brown", , "chris.brown@decisionpatterns.com", c("aut", "cre") ),
     person("Decision Patterns", role = "cph")
@@ -15,7 +15,7 @@ Import:
     stringr.tools (>= 0.1.5)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 Repository: CRAN
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE, roclets = c("rd", "namespace", "collate"))
